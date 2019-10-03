@@ -29,6 +29,7 @@ steps:
     solution: '*.sln'
     platform: '$(BuildPlatform)'
     configuration: '$(BuildConfiguration)'
+    msbuildArgs: '/clp:v=n'
 
 - task: VSBuild@1
   displayName: 'Retry Build Solution With Binary Logger'
